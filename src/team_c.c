@@ -4,12 +4,12 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PI 3.141592
+#define PI 3.141592f
 #define NAME_LENGTH 12
 
 typedef struct {
 	char name[NAME_LENGTH];
-	double pi;
+	float pi;
 	float diameter;
 } m_circle_properties_t;
 
@@ -17,14 +17,15 @@ void TransformPINumber(void)
 {
 	m_circle_properties_t circle;
 	// int j = 0;
-	circle.pi = PI;
+	circle.pi = (float)PI;
+
 
 	//strncpy(circle.name, "jean-pierre", NAME_LENGTH);
 	//circle.name[NAME_LENGTH-1] >> 5;
 
 
 	// !!!!!!! This part should not be changed !!!!!!!!
-	if (circle.pi == PI) {
+	if (circle.pi == (float)PI) {
 		PRINT_TEAM_C("Great ! Team_c make it working !\n");
 	} else {
 		PRINT_TEAM_C("Error: pi_number is not equal to PI\n");
