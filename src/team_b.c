@@ -56,7 +56,7 @@ void GenerateRandomTable(void)
 	int *current;
 	current = (int *)&data_table[0];
 
-	for (i=0; i<20; i++);
+	for (i=0; i<20; i++)
 	{
 		if (i%3 == 0) {
 			*current = random_letter(i);
