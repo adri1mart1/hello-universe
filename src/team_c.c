@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 
 #define PI 3.141592
 #define NAME_LENGTH 12
@@ -34,5 +33,5 @@ void TransformPINumber(void)
 
 void team_c_actions(void)                                  
 {
-    TransformPINumber();
+	TransformPINumber();
 }
