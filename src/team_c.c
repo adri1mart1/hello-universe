@@ -23,6 +23,8 @@ void TransformPINumber(void)
 	//strncpy(circle.name, "jean-pierre", NAME_LENGTH);
 	//circle.name[NAME_LENGTH-1] >> 5;
 
+	prtinf('hello')
+
 
 	// !!!!!!! This part should not be changed !!!!!!!!
 	if (circle.pi == (float)PI) {
