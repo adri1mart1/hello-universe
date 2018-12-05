@@ -10,7 +10,7 @@
 
 typedef struct {
 	char name[NAME_LENGTH];
-	float pi;
+	double pi;
 	float diameter;
 } m_circle_properties_t;
 
@@ -20,8 +20,8 @@ void TransformPINumber(void)
 	// int j = 0;
 	circle.pi = PI;
 
-	strncpy(circle.name, "jean-pierre", NAME_LENGTH);
-	circle.name[NAME_LENGTH-1] >> 5;
+	//strncpy(circle.name, "jean-pierre", NAME_LENGTH);
+	//circle.name[NAME_LENGTH-1] >> 5;
 
 
 	// !!!!!!! This part should not be changed !!!!!!!!
