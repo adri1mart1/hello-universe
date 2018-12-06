@@ -10,7 +10,8 @@
 
 char random_letter(int i) 
 {
-	return i%2 == 0 ? 'X': 'Y';
+
+	return (char)i%23 + 99;
 }
 
 void GenerateRandomTable(void)
@@ -26,7 +27,7 @@ void GenerateRandomTable(void)
 	// from index 20 to 29 --> samples set to 65 ('A')
 	// ...... etc
 
-	for (i=0; i<= MAX_SIZE; i++) {
+	for (i=0; i < MAX_SIZE; i++) {
 		if (i < 10) {
 			data_table[i] = 65;
 		} else if (i < 20) {
@@ -53,10 +54,10 @@ void GenerateRandomTable(void)
 	// STEP 2: 
 	// for the first 20 characters, every 3 letters, i 
 	// would like a random letter between 'C' and 'Z'
-	int *current;
-	current = (int *)&data_table[0];
+	char *current;
+	current = (char *)&data_table[0];
 
-	for (i=0; i<20; i++);
+	for (i=0; i<20; i++)
 	{
 		if (i%3 == 0) {
 			*current = random_letter(i);
