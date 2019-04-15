@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-#define PI 3.141592
+#define PI 3.141592f
 #define NAME_LENGTH 12
 
 typedef struct {
@@ -22,7 +22,7 @@ void TransformPINumber(void)
 
 	strncpy(circle.name, "jean-pierre", NAME_LENGTH);
 	circle.name[NAME_LENGTH-1] >> 5;
-
+	printf(sizeof(circle.pi));
 
 	// !!!!!!! This part should not be changed !!!!!!!!
 	if (circle.pi == PI) {
